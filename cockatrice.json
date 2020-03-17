@@ -22,7 +22,6 @@
 		"servatrice.exe"
     ],
     "checkver": {
-        "url": "https://github.com/cockatrice/cockatrice/releases/latest",
-        "re": "(\\d{4}-\\d{2}-\\d{2}-Release-\\d+\\.\\d+\\.\\d+\/Cockatrice-[^-]+-\\d+\\.\\d+\\.\\d+)-[^.]+\\.exe"
+        "github": "https://github.com/Cockatrice/Cockatrice"
     }
 }
