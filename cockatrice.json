@@ -1,0 +1,28 @@
+{ 
+	"homepage": "https://cockatrice.github.io/",
+    "description": "An open-source, multiplatform program for playing tabletop card games over a network",
+    "version": "2019-08-31-Release-2.7.2/Cockatrice-Faerie_Tales-2.7.2",
+    "license": "GPLv2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Cockatrice/Cockatrice/releases/download/2019-08-31-Release-2.7.2/Cockatrice-Faerie_Tales-2.7.2-win64.exe",
+            "hash": "92adf0da1acc34719b1743266facb3e48f39f90a514c0ec2975af6f357174ead",
+            "extract_dir": "cockatrice-x64"
+        },
+        "32bit": {
+            "url": "https://nodejs.org/dist/v12.16.1/node-v12.16.1-win-x86.7z",
+            "hash": "7485364c6a72f17ef8ab10cfed8ce16a182b544a45f0b16e604a809d4c4f81e5",
+            "extract_dir": "cockatrice-x86"
+        }
+    },
+    "bin": [ 
+    	"cockatrice.exe",
+		"dbconverter.exe",
+		"oracle.exe",
+		"servatrice.exe"
+    ],
+    "checkver": {
+        "url": "https://github.com/cockatrice/cockatrice/releases/latest",
+        "re": "(\\d{4}-\\d{2}-\\d{2}-Release-\\d+\\.\\d+\\.\\d+\/Cockatrice-[^-]+-\\d+\\.\\d+\\.\\d+)-[^.]+\\.exe"
+    }
+}
